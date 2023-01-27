@@ -504,24 +504,24 @@ charactersMap.forEach((row, i) => {
 // Images
 // 1. Background
 const image = new Image();
-image.src = "./images/Map.png";
+image.src = "./Images/Map.png";
 
 // 2. Foreground
 const foregroundImage = new Image();
-foregroundImage.src = "./images/Foreground.png";
+foregroundImage.src = "./Images/Foreground.png";
 
 // 3. Player
 const playerDown = new Image();
-playerDown.src = "./images/Characters/RedNinja/WalkDown.png";
+playerDown.src = "./Images/Characters/RedNinja/WalkDown.png";
 
 const playerUp = new Image();
-playerUp.src = "./images/Characters/RedNinja/WalkUp.png";
+playerUp.src = "./Images/Characters/RedNinja/WalkUp.png";
 
 const playerLeft = new Image();
-playerLeft.src = "./images/Characters/RedNinja/WalkLeft.png";
+playerLeft.src = "./Images/Characters/RedNinja/WalkLeft.png";
 
 const playerRight = new Image();
-playerRight.src = "./images/Characters/RedNinja/WalkRight.png";
+playerRight.src = "./Images/Characters/RedNinja/WalkRight.png";
 
 // Keys
 const keys = {
@@ -800,7 +800,7 @@ function animate() {
 
 // Battle Background
 const battleBackgroundImage = new Image();
-battleBackgroundImage.src = "./Images/battleBackground.png";
+battleBackgroundImage.src = "../Images/battleBackground.png";
 const battleBackground = new Sprite({
   position: {
     x: 0,
