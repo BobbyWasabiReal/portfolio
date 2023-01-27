@@ -42,10 +42,6 @@ nav a {
   font-size: 8px;
 }
 
-.footer-links {
-  margin-top: 1.8vmin;
-}
-
 #home {
   padding-left: 2vmin;
   font-size: 32px;
@@ -136,21 +132,39 @@ footer {
   justify-content: space-between;
   width: 100%;
   background-color: black;
-  height: 5vmin;
+  height: 120px;
 }
 
-footer a{
+footer a, footer img{
   color: white;
   padding-left: 2vmin;
   padding-right: 1vmin;
   font-family: 'Press Start 2P';
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   transition: 200ms;
 }
 
-footer a:hover, nav a:hover, .projects-a:hover {
+nav a:hover, .projects-a:hover {
   color: rgb(78, 78, 78);
+}
+
+footer a:hover {
+  background-color: rgba(78, 78, 78, 0.2);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#linkedin-img {
+  width: 80px;
 }
 
 .footer-name {

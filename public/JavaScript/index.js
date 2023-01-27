@@ -317,7 +317,8 @@ charactersMap.forEach((row, i) => {
             "Hello and Welcome to the Experience Dojo!", 
             "Gabriel's previous experience(s) is/are...",
             "as a Volunteer Sound Technician...",
-            "From 2018 - current, He has worked with a team of 7 to create, maintain, and manage a sound system.",
+            "From 2018 - current, He has worked with a team of 7 to create, maintain, and manage a sound system for his local church.",
+            "...",
             "Also, have you happen to see any really large racoons around?",
             "I haven't been able to find our food and other supplies."
         ],
@@ -557,7 +558,6 @@ const player = new Sprite({
     right: playerRight,
     down: playerDown,
   },
-  scale: 1.02,
 });
 
 // Background
