@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+canvas {
+  border: 10px rgb(60, 60, 60) solid;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(18, 18, 18);
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+nav {
+  margin-top: -1vmin;
+  margin-left: -1vmin;
+  padding-left: 2vmin;
+  height: 10vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  margin-bottom: 5vmin;
+}
+
+nav a {
+  font-family: 'Press Start 2P';
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+.nav-links {
+  padding-right: 2vmin;
+  font-size: 8px;
+}
+
+.footer-links {
+  margin-top: 1.8vmin;
+}
+
+#home {
+  padding-left: 2vmin;
+  font-size: 32px;
+}
+
+#me {
+  width: 180px;
+}
+
+#about, #skills, #projects, #experience {
+  font-family: 'Press Start 2P';
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgb(41, 41, 41);
+  border-radius: 2px;
+  padding: 1.5vmin;
+  margin-bottom: 5vmin;
+}
+
+#about {
+  margin-top: -2vmin;
+}
+
+.char-img {
+  width: 60px;
+}
+
+#about-text {
+  font-family: 'Press Start 2P';
+  font-size: 15px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+#skills-title {
+  font-family: 'Press Start 2P';
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+#skills-list{
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 0;
+}
+
+.soft-skills {
+  padding-top: -100px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  height: 5vmin;
+}
+
+footer a{
+  color: white;
+  padding-left: 2vmin;
+  padding-right: 1vmin;
+  font-family: 'Press Start 2P';
+  font-size: 16px;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+footer a:hover, nav a:hover {
+  color: rgb(97, 95, 95);
+}
+
+.footer-name {
+  color: white;
+  padding-left: 2vmin;
+  padding-right: 1vmin;
+  font-family: 'Press Start 2P';
+  font-size: 16px;
+}
+
+#controls {
+  background-color: rgba(0, 0, 0, 0.617);
+  position: absolute;
+  top: 10px;
+  bottom: 14px;
+  left: 10px;
+  right: 10px;
+  z-index: 9;
+}
+
+#controls:hover {
+  cursor: pointer;
+}
+
+#controls-title {
+  text-align: center;
+  font-family: 'Press Start 2P';
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 12%;
+  left: 3%;
+  right: 0;
+  bottom: 80%;
+}
+
+#controls-text {
+  text-align: center;
+  font-family: 'Press Start 2P';
+  color: white;
+  position: absolute;
+  top: 78%;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+}
+
+#controls-img {
+  position: absolute;
+  width: 644px;
+  top: 50%;
+  left: 19%;
+}
+
+#game {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 4vmin;
+}
+
+#transition {
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  bottom: 14px;
+  left: 10px;
+  right: 10px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#dialogue-box {
+  font-family: 'Press Start 2P';
+  display: flex;
+  background-color: white;
+  position: absolute;
+  height: 95px;
+  left: 10px;
+  right: 10px;
+  bottom: 14px;
+  border-top: 4px black solid;
+  display: none;
+  padding: 12px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+#interface {
+  display: none;
+}
+
+#battle-box {
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  height: 95px;
+  left: 10px;
+  right: 10px;
+  bottom: 14px;
+  border-top: 4px black solid;
+}
+
+#battle-text {
+  font-family: 'Press Start 2P';
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 12px;
+  display: none;
+  transition: 200ms;
+}
+
+#battle-text:hover {
+  cursor: pointer;
+  background-color: rgb(222, 222, 222);
+}
+
+#attack-info {
+  font-family: 'Press Start 2P';
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 95px;
+  border-left: 4px black solid;
+  max-width: 300px;
+  padding-left: 20px;
+}
+
+#attack-interface {
+  width: 66.66%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.atk-button {
+  font-family: 'Press Start 2P';
+  font-size: 16px;
+  background-color: white;
+  border: 1px rgb(222, 221, 221) solid;
+  transition: 200ms;
+}
+
+.atk-button:hover {
+  color: white;
+  background-color: rgb(131, 131, 131);
+  border: 1px black solid;
+  cursor: pointer;
+}
+
+.pkmn-name {
+  font-family: 'Press Start 2P';
+  font-size: 16px;
+}
+
+#hampter {
+  background-color: white;
+  width: 250px;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  border: 4px black solid;
+  padding: 10px;
+  text-align: left;
+}
+
+#hampter-hp {
+  position: relative;
+}
+
+#hampter-maxhp {
+  height: 5px;
+  background-color: rgb(140, 140, 140);
+  margin-top: 5px;
+}
+
+#hampter-currhp {
+  height: 5px;
+  background-color: rgb(49, 211, 21);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#nohtyp {
+  background-color: white;
+  width: 250px;
+  position: absolute;
+  top: 380px;
+  right: 100px;
+  border: 4px black solid;
+  padding: 1.2vmin;
+  text-align: left;
+}
+
+#nohtyp-hp {
+  position: relative;
+}
+
+#nohtyp-maxhp {
+  height: 5px;
+  background-color: rgb(140, 140, 140);
+  margin-top: 5px;
+}
+
+#nohtyp-currhp {
+  height: 5px;
+  background-color: rgb(49, 211, 21);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/stylesheets/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="JavaScript/data/audio.js"></script>
+  <script defer src="JavaScript/data/battlezones.js"></script>
+  <script defer src="JavaScript/data/collisions.js"></script>
+  <script defer src="JavaScript/data/attacks.js"></script>
+  <script defer src="JavaScript/data/pokemon.js"></script>
+  <script defer src="JavaScript/data/characters.js"></script>
+  <script defer src="JavaScript/utilities.js"></script>
+  <script defer src="JavaScript/classes.js"></script>
+  <script defer src="JavaScript/index.js"></script>
+  <script defer src="JavaScript/battle.js"></script>
+  <title>Bobby Wasabi</title>
+</head>
+
+<body>
+  <nav>
+    <a href="/" id="home">Bobby Wasabi</a>
+    <div class="right nav-links">
+      <a href="https://drive.google.com/file/d/1HduZ11RNwQPXovnDB44mVLEaPbrkKgb5/view?usp=sharing">My Resume</a>
+    </div>
+  </nav>
+  <div id="about">
+    <img src="./Images/PxlMe.png" alt="me" id="me">
+    <h1>About Me</h1> 
+    <div id="about-text">
+      <p>Hi, my name is Gabriel (Bobby) Covaci. I am a 19 year old volunteer sound technician and drummer, with a passion for programming and helping others. I have experience with Python, Django, HTML, CSS, JavaScript, React, and more!</p>
+    </div>
+  </div>
+  <div id="game">
+    <div id="transition"></div>
+    <div id="controls">
+      <h1 id="controls-title">Controls:</h1>
+      <img src="./Images/Controls.png" alt="controls" id="controls-img">
+      <h2 id="controls-text">Click Anywhere to Begin</h2>
+    </div>
+    <canvas></canvas>
+    <div id="dialogue-box">Hello!</div>
+    <div id="interface">
+      <!-- Hampter (Enemy) HP -->
+      <div id="hampter">
+        <h1 class="pkmn-name">Hampter <span class="right">Lv.4</span></h1>
+        <div id="hampter-hp">
+          <div id="hampter-maxhp"></div>
+          <div id="hampter-currhp"></div>
+        </div>
+      </div>
+      <!-- Nohtyp (Player) HP -->
+      <div id="nohtyp">
+        <h1 class="pkmn-name">Nohtyp <span class="right">Lv.5</span></h1>
+        <div id="nohtyp-hp">
+          <div id="nohtyp-maxhp"></div>
+          <div id="nohtyp-currhp"></div>
+        </div>
+      </div>
+      <div id="battle-box">
+        <div id="battle-text"></div>
+        <div id="attack-interface"></div>
+        <div>
+          <h1 id="attack-info">Attack Info</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="skills">
+      <h1>Skills <img src="./Images/Characters/Samurai/Samurai.png" alt="" class="char-img"></h1>
+      <div id="skills-list">
+        <div class="tech-skills">
+          <h2>Technical Skills</h2>
+            <li>HTML</li><br>
+            <li>CSS</li><br>
+            <li>JavaScript</li><br>
+            <li>Python</li><br>
+            <li>Django</li><br>
+            <li>React</li><br>
+            <li>MERN-Stack</li>
+        </div>
+        <div class="soft-skills">
+          <h2>Soft Skills</h2>
+            <li>Front-End Development</li><br>
+            <li>Team Collaboration</li><br>
+            <li>Engineering Management</li><br>
+            <li>Critical Thinking</li><br>
+            <li>Time Management</li><br>
+            <li>Reliable & Trustworthy</li><br>
+            <li>Testing and Troubleshooting</li><br>
+        </div>
+      </div>
+    </div>
+    <div id="experience">
+      <h1>Experience <img src="./Images/Characters/Master/Master.png" alt="" class="char-img"></h1>
+    </div>
+    <div id="projects">
+      <h1>Projects <img src="./Images/Characters/Mayor/Mayor.png" alt="" class="char-img"></h1>
+    </div>
+  </div>
+    <footer>
+      <div class="footer-links">
+        <a href="https://github.com/BobbyWasabiReal">My Github</a>
+        <a href="https://www.linkedin.com/in/gabriel-bobby-covaci-a1a308254/">My LinkedIn</a>
+      </div>
+    </footer>
+</body>
+
+</html>
