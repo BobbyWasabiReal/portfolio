@@ -132,9 +132,7 @@ function animateBattle() {
     sprite.draw();
   });
 }
-setTimeout(() => {
   animate();
-}, 3000);
 
 // For testing purposes
 // initBattle();
