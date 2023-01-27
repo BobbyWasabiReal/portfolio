@@ -132,7 +132,6 @@ function animateBattle() {
     sprite.draw();
   });
 }
-animate();
 
 // For testing purposes
 // initBattle();
