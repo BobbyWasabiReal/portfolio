@@ -92,7 +92,7 @@ class Sprite {
       image.position.y,
       image.width * this.scale,
       image.height * this.scale
-    );
+      );
     c.restore();
 
     // The following code below is responsible for the animation of every sprite.
