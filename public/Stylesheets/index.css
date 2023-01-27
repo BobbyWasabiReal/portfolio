@@ -52,7 +52,7 @@ nav a {
 }
 
 #me {
-  width: 180px;
+  width: 300px;
 }
 
 #about, #skills, #projects, #experience {
@@ -61,14 +61,39 @@ nav a {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(18, 18, 18);
   border-radius: 2px;
   padding: 1.5vmin;
   margin-bottom: 5vmin;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#about h1, #skills h1, #projects h1, #experience h1 {
+  padding-bottom: 15px;
+  border-bottom: 4px solid rgb(60, 60, 60);
+  max-width: 1000px;
+  text-align: center;
 }
 
 #about {
   margin-top: -2vmin;
+}
+
+#experience {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#experience-text {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.projects-a {
+  text-decoration: none;
+  color: rgb(161, 161, 161);
+  transition: 200ms;
 }
 
 .char-img {
@@ -93,7 +118,7 @@ nav a {
   padding: 0;
 }
 
-#skills-list{
+#skills-list {
   text-align: left;
   display: flex;
   flex-wrap: nowrap;
@@ -124,8 +149,8 @@ footer a{
   transition: 200ms;
 }
 
-footer a:hover, nav a:hover {
-  color: rgb(97, 95, 95);
+footer a:hover, nav a:hover, .projects-a:hover {
+  color: rgb(78, 78, 78);
 }
 
 .footer-name {
