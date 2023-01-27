@@ -795,7 +795,6 @@ function animate() {
       });
   }
 }
-animate();
 
 /*-- Battles --*/
 
