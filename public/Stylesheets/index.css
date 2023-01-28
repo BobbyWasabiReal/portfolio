@@ -35,6 +35,7 @@ nav a {
   color: white;
   text-decoration: none;
   transition: 200ms;
+  padding: 12px;
 }
 
 .nav-links {
@@ -48,7 +49,7 @@ nav a {
 }
 
 #me {
-  width: 300px;
+  width: 280px;
 }
 
 #about, #skills, #projects, #experience {
@@ -127,6 +128,12 @@ nav a {
   padding-top: -100px;
 }
 
+#projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -149,22 +156,34 @@ nav a:hover, .projects-a:hover {
   color: rgb(78, 78, 78);
 }
 
-footer a:hover {
-  background-color: rgba(78, 78, 78, 0.2);
+#scroll-img {
+  width: 40px;
 }
 
 .footer-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
+  width: 40%;
+  margin: auto;
+}
+
+.footer-links div {
+  padding: 10px;
+  border-radius: 5px;
+  transition: 200ms;
+}
+
+.footer-links div:hover {
+  background-color: rgba(78, 78, 78, 0.2);
+}
+
+#github-img, #linkedin-img {
+  padding-left: 0;
 }
 
 #linkedin-img {
-  width: 80px;
+  width: 70px;
 }
 
 .footer-name {

@@ -824,6 +824,7 @@ window.addEventListener("keydown", (e) => {
     switch (e.key) {
       case " ":
         // When the player presses space, display the next dialogue
+        audio.Chat.play();
         player.interactionAsset.dialogueIndex++;
 
         // Check if there is more dialogue to display
