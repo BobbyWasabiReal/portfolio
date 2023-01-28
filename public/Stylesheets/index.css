@@ -35,12 +35,22 @@ nav a {
   color: white;
   text-decoration: none;
   transition: 200ms;
-  padding: 12px;
+  padding: 18px;
+  max-height: 10vmin;
+  margin-left: -10px;
 }
 
 .nav-links {
-  padding-right: 2vmin;
   font-size: 8px;
+  padding: 30px;
+  padding-right: 20px;
+  max-height: 10vmin;
+  transition: 200ms;
+}
+
+nav>a:hover, .nav-links:hover {
+  background-color: rgba(98, 98, 98, 0.2);
+  color: rgb(166, 166, 166);
 }
 
 #home {
@@ -152,7 +162,7 @@ footer a, footer img{
   transition: 200ms;
 }
 
-nav a:hover, .projects-a:hover {
+.projects-a:hover {
   color: rgb(78, 78, 78);
 }
 

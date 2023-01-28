@@ -438,15 +438,15 @@ charactersMap.forEach((row, i) => {
             "I am the mayor...",
             "Some of Gabriel's Projects are...",
             "Simon: <br /> A browser-based game based on Simon!",
-            'Github: <a href="https://github.com/BobbyWasabiReal/Project-1-Browser-Based-Game">Click Here</a>',
+            'Github: <a href="https://github.com/BobbyWasabiReal/Project-1-Browser-Based-Game" target="_blank" rel="noreferrer noopener">Click Here</a>',
             "The Vault: <br /> An In-game inventory sharing app!",
-            'GitHub: <a href="https://github.com/BobbyWasabiReal/The-Vault">Click Here</a>',
-            'Heroku Live: <a href="https://the-vault-wasabi.herokuapp.com/">Click Here</a>',
+            'GitHub: <a href="https://github.com/BobbyWasabiReal/The-Vault" target="_blank" rel="noreferrer noopener">Click Here</a>',
+            'Heroku Live: <a href="https://the-vault-wasabi.herokuapp.com/" target="_blank" rel="noreferrer noopener">Click Here</a>',
             "One World Recipes: <br /> A recipe sharing app!",
-            'GitHub: <a href="https://github.com/BobbyWasabiReal/the-imposters">Click Here</a>',
+            'GitHub: <a href="https://github.com/BobbyWasabiReal/the-imposters" target="_blank" rel="noreferrer noopener">Click Here</a>',
             "PokéZon: <br /> The Pokémon Amazon!",
-            'GitHub: <a href="https://github.com/BobbyWasabiReal/Pok-Zon">Click Here</a>',
-            'Heroku Live: <a href="https://pokezon.herokuapp.com/">Click Here</a>',
+            'GitHub: <a href="https://github.com/BobbyWasabiReal/Pok-Zon" target="_blank" rel="noreferrer noopener">Click Here</a>',
+            'Heroku Live: <a href="https://pokezon.herokuapp.com/" target="_blank" rel="noreferrer noopener">Click Here</a>',
             "PS: The Heroku links may take 10-30 seconds to load...",
             "Thank You and Have Fun!",
             "PSS: If you see any man-sized raccoons, please let me know...",
@@ -635,7 +635,7 @@ function animate() {
           rectangle2: battleZone,
         }) &&
         overlappingArea > (player.width * player.height) / 2 &&
-        Math.random() < 0.008
+        Math.random() < 0.006
       ) {
         // deactivate current animation loop
         window.cancelAnimationFrame(animationId);
