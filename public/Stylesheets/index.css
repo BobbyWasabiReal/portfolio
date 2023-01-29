@@ -196,6 +196,10 @@ footer a, footer img{
   width: 70px;
 }
 
+#github-img {
+  margin-left: -12px;
+}
+
 .footer-name {
   color: white;
   padding-left: 2vmin;
