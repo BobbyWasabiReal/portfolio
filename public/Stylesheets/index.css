@@ -207,6 +207,19 @@ footer a, footer img{
   font-size: 16px;
 }
 
+#too-small {
+  color: white;
+  font-family: 'Press Start 2P';
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 10px;
+  bottom: 14px;
+  left: 10px;
+  right: 10px;
+  z-index: 10;
+  display: none;
+}
+
 #controls {
   background-color: rgba(0, 0, 0, 0.617);
   position: absolute;
@@ -416,4 +429,159 @@ footer a, footer img{
   top: 0;
   left: 0;
   right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #home {
+    font-size: 30px;
+    margin-top: -2vmin;
+  }  
+}
+
+@media screen and (max-width: 768px) {
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  #projects-list div img {
+    width: 250px;
+  }
+
+  .nav-links a {
+    padding-right: 10px;
+  }
+
+  #too-small {
+    display: block;
+  }
+
+  #controls {
+    display: none;
+  }
+
+  li, h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 13px;
+  }
+
+  #me {
+    width: 90%;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .nav-links {
+    padding: 10px;
+    padding-top: 15px;
+  }
+
+  #home {
+    font-size: 18px;
+  }
+
+  nav img {
+    width: 24px;
+  }
+
+  #projects-list div img {
+    width: 170px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+
+  .char-img {
+    width: 40px;
+  }
+
+  #about, #skills, #projects, #experience {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #github-img {
+    width: 40px;
+  }
+
+  #linkedin-img {
+    width: 40px;
+  }
+
+  footer a{
+    font-size: 12px;
+  }
+
+  .footer-links {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  * {
+    font-size: 10px;
+  }
+
+  #home {
+    font-size: 14px;
+    padding-top: 12px;
+    padding-left: 15px;
+  }
+
+  #projects-list div img {
+    width: 150px;
+  }
+
+  #about, #skills, #projects, #experience {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  * {
+    font-size: 8px;
+  }
+
+  #me {
+    width: 80%;
+  }
+
+  #home {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-left: 10px;
+  }
+
+  #projects-list div img {
+    width: 120px;
+  }
+
+  #about, #skills, #projects, #experience {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  nav img {
+    width: 22px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    padding: 5px;
+  }
 }
